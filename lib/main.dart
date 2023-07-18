@@ -4,6 +4,15 @@ import 'Screen_1.dart';
 import 'Screen_2.dart';
 
 void main() {
-  runApp(MaterialApp(home: Screen_2(),));
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return const MaterialApp(home: Screen_2(),);
+  }
 }
 
